@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Michele Loiodice – siti web, contenuti, automazioni</title>
+<meta name="description" content="Siti web, contenuti e automazioni per attività locali a Bisceglie, Bari e dintorni.">
+<meta name="theme-color" content="#0b1530">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --notte: #0b1530;
+    --notte-2: #13224a;
+    --carta: #eef2fa;
+    --sabbia: #e8d5a8;
+    --velo: #9aa8c8;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--notte);
+    color: var(--carta);
+    font-family: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* Hero: il nome impilato come sul biglietto da visita */
+  .hero { padding: 5rem 0 3.5rem; }
+  .nome {
+    margin: 0;
+    font-family: "Instrument Serif", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(3.4rem, 15vw, 9rem);
+    line-height: 0.9;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+  .nome span { display: block; }
+  .nome span + span { color: var(--sabbia); padding-left: 0.12em; }
+  .tagline {
+    margin: 2rem 0 0;
+    font-size: 1.25rem;
+    color: var(--velo);
+    max-width: 34ch;
+  }
+
+  /* Servizi come righe, non come schede */
+  .servizi { border-top: 1px solid var(--notte-2); }
+  .riga {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem 2rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--notte-2);
+  }
+  .riga h2 {
+    margin: 0;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+  }
+  .riga p { margin: 0; color: var(--velo); max-width: 52ch; }
+  @media (min-width: 720px) {
+    .riga { grid-template-columns: 220px 1fr; align-items: baseline; }
+  }
+
+  /* Contatti */
+  .contatti { padding: 4rem 0 3rem; }
+  .contatti h2 {
+    margin: 0 0 0.6rem;
+    font-family: "Instrument Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 6vw, 3rem);
+    line-height: 1.1;
+  }
+  .contatti > .wrap > p { margin: 0 0 1.8rem; color: var(--velo); max-width: 46ch; }
+  .azioni { display: flex; flex-wrap: wrap; gap: 0.8rem; }
+  .btn {
+    display: inline-block;
+    padding: 0.85rem 1.5rem;
+    border-radius: 999px;
+    font-weight: 700;
+    text-decoration: none;
+    border: 2px solid var(--sabbia);
+    transition: background 0.15s, color 0.15s;
+  }
+  .btn-primario { background: var(--sabbia); color: var(--notte); }
+  .btn-primario:hover { background: var(--carta); border-color: var(--carta); }
+  .btn-secondario { color: var(--sabbia); }
+  .btn-secondario:hover { background: var(--sabbia); color: var(--notte); }
+  .btn:focus-visible { outline: 3px solid var(--carta); outline-offset: 3px; }
+  .tel { margin-top: 1.4rem; color: var(--velo); font-size: 0.95rem; }
+  .tel a { color: var(--carta); }
+
+  footer { padding: 2rem 0 3rem; border-top: 1px solid var(--notte-2); color: var(--velo); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1 class="nome"><span>Michele</span><span>Loiodice</span></h1>
+    <p class="tagline">Visibilità. Siti web. Contenuti. Per le attività di Bisceglie, Bari e dintorni.</p>
+  </div>
+</header>
+
+<main>
+  <section class="servizi" aria-label="Servizi">
+    <div class="wrap">
+      <div class="riga">
+        <h2>Siti web</h2>
+        <p>Siti chiari e veloci per studi, negozi e professionisti. Si leggono bene dal telefono e si fanno trovare su Google.</p>
+      </div>
+      <div class="riga">
+        <h2>Contenuti</h2>
+        <p>Foto, post e grafiche coerenti tra loro, così la tua attività si riconosce subito sui social.</p>
+      </div>
+      <div class="riga">
+        <h2>Automazioni</h2>
+        <p>Risposte, promemoria e richieste che partono da sole, per far perdere meno tempo a te e ai tuoi clienti.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contatti" id="contatti">
+    <div class="wrap">
+      <h2>Parliamone</h2>
+      <p>Scrivimi due righe su cosa fai e cosa ti serve. Ti rispondo e ti dico se e come posso aiutarti.</p>
+      <div class="azioni">
+        <a class="btn btn-primario" href="https://wa.me/393925631700?text=Ciao%20Michele%2C%20ti%20scrivo%20dal%20tuo%20sito.">Scrivimi su WhatsApp</a>
+        <a class="btn btn-secondario" href="mailto:micheleloiodice.web@gmail.com">Invia un’email</a>
+      </div>
+      <p class="tel">Oppure chiama il <a href="tel:+393925631700">392 563 1700</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Michele Loiodice · Bisceglie, Bari e dintorni</div>
+</footer>
+
+</body>
+</html>
